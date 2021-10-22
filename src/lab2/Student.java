@@ -52,6 +52,14 @@ public class Student {
         this.age = age;
     }
 
+    public boolean isGraduate() {
+        return isGraduate;
+    }
+
+    public void setGraduate(boolean graduate) {
+        isGraduate = graduate;
+    }
+
     float averageGrades() {
         if (grades == null) {
             return 0;

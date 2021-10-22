@@ -35,5 +35,26 @@ public class Test {
         System.out.println(st4.getAge());
         st4 = st1;
         System.out.println(st4.getAge());
+
+        // Parametrii pe stiva.
+        String subject = "AA";
+
+        /*
+         * Nu se poate instantia un obiect in acest fel deoarece constructorul default a fost
+         * suprascris de un constructor definit de noi cu un parametru.
+         */
+//        Course course = new Course();
+        Course course = new Course(0);
+
+        /* Se poate observa ca s-a modificat campul isGraduate,
+         * deoarece pe stiva s-a pus o referinta catre obiect si
+         * nu s-a creat o copie a obiectului.
+         * */
+        course.changeGraduationStatus(st1);
+
+        course.changeName(subject);
+
+        System.out.println(subject);
+        System.out.println(st1);
     }
 }
