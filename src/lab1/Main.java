@@ -2,7 +2,6 @@ package lab1;
 
 import java.util.ArrayList;
 
-
 public class Main {
     int i = 0;
 
