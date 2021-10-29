@@ -13,11 +13,11 @@ public class Bread extends Product {
     // suprascriere
     @Override
     public void consume() {
-        System.out.println("Eat bread make from " + ingredients);
+        System.out.println("Eat bread made from " + ingredients);
     }
 
     // supraincarcare
     public void consume(int part) {
-        System.out.println("Eat just " + part +"% of bread make from " + ingredients);
+        System.out.println("Eat just " + part +"% of bread made from " + ingredients);
     }
 }
