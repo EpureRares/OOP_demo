@@ -1,6 +1,11 @@
 package lab4;
 
-public class Account {
+/***
+ * in momentul in care adaug cuvantul cheie final
+ * in momentul in care definesc o clasa, atunci
+ * nu o sa pot crea clase derivate din clasa curenta
+ */
+public /*final*/ class Account {
     private final String username;
     private String password;
 
@@ -20,5 +25,38 @@ public class Account {
 
     public String getUsername() {
         return username;
+    }
+
+
+    /**
+     * in momentul in care adaug cuvantul cheie final unei metode,
+     * inseamna ca nu pot suprascrie metoda intr-o clasa derivata
+     * */
+    public /*final*/ void operations() {
+        System.out.println("Basic operations.");
+    }
+}
+
+class UserAccount extends Account{
+
+    public UserAccount(String username, String password) {
+        super(username, password);
+    }
+
+    @Override
+    public void operations() {
+        System.out.println("Normal user.");
+    }
+}
+
+class AdminAccount extends Account {
+
+    public AdminAccount(String username, String password) {
+        super(username, password);
+    }
+
+    @Override
+    public void operations() {
+        System.out.println("Privileged user.");
     }
 }

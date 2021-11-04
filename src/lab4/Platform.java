@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Platform {
-    private Platform platform = null;
+    private static Platform platform = null;
     private final List<Account> accounts;
     private final List<Account> waitList;
 
@@ -13,9 +13,9 @@ public class Platform {
         this.waitList = new ArrayList<>();
     }
 
-    public Platform getInstance() {
-        if (this.platform == null) {
-            this.platform = new Platform();
+    public static Platform getInstance() {
+        if (platform == null) {
+            platform = new Platform();
         }
         return platform;
     }
@@ -26,6 +26,7 @@ public class Platform {
             this.waitList.add(waitAccount);
             return waitAccount;
         }
+
         Account account = new Account(username, password);
         this.accounts.add(account);
         return account;
@@ -42,6 +43,7 @@ public class Platform {
         return null;
     }
 
-
-
+    public List<Account> getWaitList() {
+        return waitList;
+    }
 }
