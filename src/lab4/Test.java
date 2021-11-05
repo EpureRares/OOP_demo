@@ -28,5 +28,7 @@ public class Test {
 
         platform.changePassword("Gogu1", (newPassword + "as"));
 
+        Account account = null;
+        account.printMessage();
     }
 }

@@ -35,6 +35,10 @@ public /*final*/ class Account {
     public /*final*/ void operations() {
         System.out.println("Basic operations.");
     }
+
+    public static void printMessage() {
+        System.out.println("Hello World!");
+    }
 }
 
 class UserAccount extends Account{
