@@ -1,4 +1,4 @@
-package lab5;
+package lab5.vehicle;
 
 public class Car implements Vehicle {
     int speed = 0;
