@@ -1,2 +1,5 @@
-package lab6.Operation;public class BasicOperation {
+package lab6.Operation;
+
+public interface BasicOperation {
+    public String printOperation();
 }
