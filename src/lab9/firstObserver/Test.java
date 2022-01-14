@@ -34,8 +34,8 @@ class NewsAgency  {
 }
 
 
-public class Observer {
-    public static void main (String args[]) {
+class Observer {
+    public static void main (String[] args) {
         NewsAgency observable = new NewsAgency();
         NewsChannel observer = new NewsChannel();
 
