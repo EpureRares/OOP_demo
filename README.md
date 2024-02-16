@@ -1,6 +1,6 @@
 # OOP Demos 
 Developed this demos as part of my job as an Undergraduate Teaching Assistant from OOP course.
-The content of this demos was designated to explain the concepts described in the laboratories in an easier manner.(https://ocw.cs.pub.ro/courses/poo-ca-cd). 
+The content of this demos was designated to explain the concepts described in the laboratories in an easier manner.(https://ocw.cs.pub.ro/courses/poo-ca-cd)
 
 The concepts covered in this short examples are:
 * Constructors
